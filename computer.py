@@ -29,17 +29,20 @@ class Computer: #DEFINING a computer object and all of its attributes & methods
         self.operating_system = new_OS
         #This will update a new OS
 
-    def computer_information(self):
-            word1 = str(self.description)
-            word2 = str(self.processor_type)
-            word3 = str(self.hard_drive_capacity)
-            word4 = str(self.memory)
-            word5 = str(self.operating_system)
-            word6 = str(self.year_made)
-            word7 = str(self.price)
-            total_description = word1+" "+word2+" "+word3+" "+word4+""+word5+" "+word6+""+word7
-            #an innefficient way to put the computer information in inventory, but it works
-            return total_description
+    # def computer_information(self):
+    #         word1 = str(self.description)
+    #         word2 = str(self.processor_type)
+    #         word3 = str(self.hard_drive_capacity)
+    #         word4 = str(self.memory)
+    #         word5 = str(self.operating_system)
+    #         word6 = str(self.year_made)
+    #         word7 = str(self.price)
+    #         total_description = word1+" "+word2+" "+word3+" "+word4+""+word5+" "+word6+""+word7
+    #         #an innefficient way to put the computer information in inventory, but it works
+    #         return total_description
+
+    # The method above (computer_information) is an incorrect way to add a computer object to the inventory list
+    # This was my mistake for level 3 as shown earlier.
 
 
 def main ():
@@ -51,7 +54,10 @@ def main ():
     print (NewComputer.price)
     NewComputer.comp_price(400)
     print (NewComputer.price)
-    print (NewComputer.computer_information())
     
 main ()
+
+# I used this main to test my code
+#I have moved most of this testing to the oo_resale_shop file.
+# I have commented it out because when I ran main, it would run for both this computer file and the oo_resale_shop file
  
